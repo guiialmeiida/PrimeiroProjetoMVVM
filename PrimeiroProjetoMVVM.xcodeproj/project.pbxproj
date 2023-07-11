@@ -18,6 +18,7 @@
 		C3E68BCF2A5CD86B0099A78E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BCE2A5CD86B0099A78E /* HomeViewModel.swift */; };
 		C3E68BD32A5D6F7C0099A78E /* StoryCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BD22A5D6F7C0099A78E /* StoryCardCollectionViewCell.swift */; };
 		C3E68BD62A5D6FE30099A78E /* StoryCardCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BD52A5D6FE30099A78E /* StoryCardCollectionViewCellScreen.swift */; };
+		C3E68BD92A5DB9A70099A78E /* StoryCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BD82A5DB9A70099A78E /* StoryCardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C3E68BCE2A5CD86B0099A78E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C3E68BD22A5D6F7C0099A78E /* StoryCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3E68BD52A5D6FE30099A78E /* StoryCardCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardCollectionViewCellScreen.swift; sourceTree = "<group>"; };
+		C3E68BD82A5DB9A70099A78E /* StoryCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		C3E68BD12A5D6F410099A78E /* StoryCardCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C3E68BD72A5DB9830099A78E /* ViewModel */,
 				C3E68BD42A5D6FC60099A78E /* Screen */,
 				C3E68BD22A5D6F7C0099A78E /* StoryCardCollectionViewCell.swift */,
 			);
@@ -120,6 +123,14 @@
 				C3E68BD52A5D6FE30099A78E /* StoryCardCollectionViewCellScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		C3E68BD72A5DB9830099A78E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3E68BD82A5DB9A70099A78E /* StoryCardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 				C3E68BB62A589D960099A78E /* HomeVC.swift in Sources */,
 				C3E68BD32A5D6F7C0099A78E /* StoryCardCollectionViewCell.swift in Sources */,
 				C3E68BCF2A5CD86B0099A78E /* HomeViewModel.swift in Sources */,
+				C3E68BD92A5DB9A70099A78E /* StoryCardViewModel.swift in Sources */,
 				C3E68BB22A589D960099A78E /* AppDelegate.swift in Sources */,
 				C3E68BCD2A5CCE320099A78E /* UiColor + Extension.swift in Sources */,
 				C3E68BCB2A5CCC920099A78E /* UiView + Extension.swift in Sources */,
