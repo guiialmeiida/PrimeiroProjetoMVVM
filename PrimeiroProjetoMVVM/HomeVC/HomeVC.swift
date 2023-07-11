@@ -9,7 +9,8 @@ import UIKit
 
 class HomeVC: UIViewController {
     
-    var homeScreen: HomeScreen?
+    private var homeScreen: HomeScreen?
+    private var viewModel: HomeViewModel = HomeViewModel()
     
     override func loadView() {
         homeScreen = HomeScreen()
@@ -18,5 +19,20 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        homeScreen?.configProtocolCollectionView(delegate: self, datasource: self)
+    }
+}
+
+extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        viewModel.numberOfItems
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        viewModel.sizeForItem(indexPath: indexPath, frame: collectionView.frame)
     }
 }

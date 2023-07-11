@@ -16,7 +16,7 @@ class HomeScreen: UIView {
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.showsHorizontalScrollIndicator = false
         // TODO: REGISTER
-        cv.backgroundColor = .red
+        cv.backgroundColor = .clear
         return cv
     }()
     
