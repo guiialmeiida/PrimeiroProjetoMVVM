@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34401642A71E2A3003E0A37 /* PostCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34401632A71E2A3003E0A37 /* PostCardCollectionViewCell.swift */; };
+		C34401672A71E2EC003E0A37 /* PostCardCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34401662A71E2EC003E0A37 /* PostCardCollectionViewCellScreen.swift */; };
 		C3E68BB22A589D960099A78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BB12A589D960099A78E /* AppDelegate.swift */; };
 		C3E68BB42A589D960099A78E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BB32A589D960099A78E /* SceneDelegate.swift */; };
 		C3E68BB62A589D960099A78E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BB52A589D960099A78E /* HomeVC.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C34401632A71E2A3003E0A37 /* PostCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		C34401662A71E2EC003E0A37 /* PostCardCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		C3E68BAE2A589D960099A78E /* PrimeiroProjetoMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeiroProjetoMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E68BB12A589D960099A78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E68BB32A589D960099A78E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C34401602A71E24C003E0A37 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				C3E68BD12A5D6F410099A78E /* StoryCardCollectionViewCell */,
+				C3E68BDF2A5F44210099A78E /* StoryCollectionViewCell */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		C34401612A71E25D003E0A37 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				C34401622A71E263003E0A37 /* PostCardCollectionViewCell */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		C34401622A71E263003E0A37 /* PostCardCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C34401652A71E2D7003E0A37 /* Screen */,
+				C34401632A71E2A3003E0A37 /* PostCardCollectionViewCell.swift */,
+			);
+			path = PostCardCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		C34401652A71E2D7003E0A37 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C34401662A71E2EC003E0A37 /* PostCardCollectionViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		C3E68BA52A589D960099A78E = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +147,8 @@
 		C3E68BD02A5D6F390099A78E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C3E68BDF2A5F44210099A78E /* StoryCollectionViewCell */,
-				C3E68BD12A5D6F410099A78E /* StoryCardCollectionViewCell */,
+				C34401612A71E25D003E0A37 /* Post */,
+				C34401602A71E24C003E0A37 /* Story */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -254,11 +292,13 @@
 			files = (
 				C3E68BC82A5CC9E30099A78E /* HomeScreen.swift in Sources */,
 				C3E68BE42A5F44DE0099A78E /* StoryCollectionViewCellScreen.swift in Sources */,
+				C34401642A71E2A3003E0A37 /* PostCardCollectionViewCell.swift in Sources */,
 				C3E68BB62A589D960099A78E /* HomeVC.swift in Sources */,
 				C3E68BD32A5D6F7C0099A78E /* StoryCardCollectionViewCell.swift in Sources */,
 				C3E68BCF2A5CD86B0099A78E /* HomeViewModel.swift in Sources */,
 				C3E68BE12A5F445A0099A78E /* StoryCollectionViewCell.swift in Sources */,
 				C3E68BD92A5DB9A70099A78E /* StoryCardViewModel.swift in Sources */,
+				C34401672A71E2EC003E0A37 /* PostCardCollectionViewCellScreen.swift in Sources */,
 				C3E68BDC2A5F39DE0099A78E /* Stories.swift in Sources */,
 				C3E68BB22A589D960099A78E /* AppDelegate.swift in Sources */,
 				C3E68BCD2A5CCE320099A78E /* UiColor + Extension.swift in Sources */,
