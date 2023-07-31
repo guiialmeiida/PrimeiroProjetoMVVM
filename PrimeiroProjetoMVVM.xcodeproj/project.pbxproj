@@ -16,6 +16,8 @@
 		C3DD19832A7856A5007FC184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3DD19822A7856A5007FC184 /* GoogleService-Info.plist */; };
 		C3DD19862A785790007FC184 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C3DD19852A785790007FC184 /* FirebaseAuth */; };
 		C3DD19882A785790007FC184 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C3DD19872A785790007FC184 /* FirebaseCrashlytics */; };
+		C3DD198E2A787843007FC184 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DD198B2A787843007FC184 /* LoginVC.swift */; };
+		C3DD198F2A787843007FC184 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DD198D2A787843007FC184 /* LoginScreen.swift */; };
 		C3E68BB22A589D960099A78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BB12A589D960099A78E /* AppDelegate.swift */; };
 		C3E68BB42A589D960099A78E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BB32A589D960099A78E /* SceneDelegate.swift */; };
 		C3E68BB62A589D960099A78E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E68BB52A589D960099A78E /* HomeVC.swift */; };
@@ -41,6 +43,8 @@
 		C344016E2A727CE6003E0A37 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34401712A727D2E003E0A37 /* PostCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		C3DD19822A7856A5007FC184 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3DD198B2A787843007FC184 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C3DD198D2A787843007FC184 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		C3E68BAE2A589D960099A78E /* PrimeiroProjetoMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeiroProjetoMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E68BB12A589D960099A78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E68BB32A589D960099A78E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +138,39 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		C3DD19892A787843007FC184 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				C3DD198A2A787843007FC184 /* VC */,
+				C3DD198C2A787843007FC184 /* Screen */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		C3DD198A2A787843007FC184 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C3DD198B2A787843007FC184 /* LoginVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C3DD198C2A787843007FC184 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C3DD198D2A787843007FC184 /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		C3DD19902A78790C007FC184 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C3E68BB52A589D960099A78E /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		C3E68BA52A589D960099A78E = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +190,7 @@
 		C3E68BB02A589D960099A78E /* PrimeiroProjetoMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C3DD19892A787843007FC184 /* LoginVC */,
 				C3E68BDA2A5F39C60099A78E /* Model */,
 				C3E68BC92A5CCC770099A78E /* Extension */,
 				C3E68BC62A5CC9CA0099A78E /* HomeVC */,
@@ -169,10 +207,10 @@
 		C3E68BC62A5CC9CA0099A78E /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				C3DD19902A78790C007FC184 /* VC */,
 				C3E68BDE2A5F3A380099A78E /* ViewModel */,
 				C3E68BDD2A5F3A2D0099A78E /* Screen */,
 				C3E68BD02A5D6F390099A78E /* Cell */,
-				C3E68BB52A589D960099A78E /* HomeVC.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -352,9 +390,11 @@
 				C3E68BD92A5DB9A70099A78E /* StoryCardViewModel.swift in Sources */,
 				C344016F2A727CE6003E0A37 /* PostCollectionViewCell.swift in Sources */,
 				C344016C2A71EA2A003E0A37 /* PostCardViewModel.swift in Sources */,
+				C3DD198F2A787843007FC184 /* LoginScreen.swift in Sources */,
 				C34401672A71E2EC003E0A37 /* PostCardCollectionViewCellScreen.swift in Sources */,
 				C3E68BDC2A5F39DE0099A78E /* Stories.swift in Sources */,
 				C3E68BB22A589D960099A78E /* AppDelegate.swift in Sources */,
+				C3DD198E2A787843007FC184 /* LoginVC.swift in Sources */,
 				C3E68BCD2A5CCE320099A78E /* UiColor + Extension.swift in Sources */,
 				C3E68BCB2A5CCC920099A78E /* UiView + Extension.swift in Sources */,
 				C3E68BB42A589D960099A78E /* SceneDelegate.swift in Sources */,
